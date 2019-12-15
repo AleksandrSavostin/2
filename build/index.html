@@ -1,13 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <title>SmartDevice</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+	<header class="header">
+		<div class="header__wrapper">
+			<div class="header__top">
+				<ul class="header__logo-wrapper">
+					<li class="header__logo header__logo--desktop"><img src="" alt=""></li>
+					<li class="header__logo header__logo--tablet"><img src="" alt=""></li>
+					<li class="header__logo header__logo--mobile"><img src="" alt=""></li>
+				</ul>
+				<div class="header__contact">
+					<a href="#" class="header__contact-email">info@sd.ru</a>
+					<a href="#" class="header__contact-telephone">+7 (495) 000 52 52</a>
+					<a href="" class="header__contact-callback">Заказать звонок</a>
+				</div>
+			</div>
+			<div class="header__info">
+				<div class="header__block-text">
+					<h1 class="header__info-title">Печатные платы</h1>
+					<p class="header__info-text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+					<a href="#" class="header__info-consult">Получить бесплатную консультацию</a>
+					<button class="header__scroll-button">Cкролл вниз</button>
+				</div>
+				<div class="header__block-image">
+					<ul class="header__image-list">
+						<li class="header__image-item header__image-item--desktop"></li>
+						<li class="header__image-item header__image-item--tablet"></li>
+						<li class="header__image-item header__image-item--mobile"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<ul class="main__advantages-list">
+			<li class="main__advantages-item main__advantages-list--operate">
+				<h3 class="main__advantages-title">Оперативные сроки</h3>
+				<p class="main__advantages-text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+			</li>
+			<li class="main__advantages-item main__advantages-list--big">
+				<h3 class="main__advantages-title">Крупные поставщики</h3>
+				<p class="main__advantages-text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+			</li>
+			<li class="main__advantages-item main__advantages-list--full">
+				<h3 class="main__advantages-title">Полная конфиденциальность</h3>
+				<p class="main__advantages-text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+			</li>
+			<li class="main__advantages-item main__advantages-list--person">
+				<h3 class="main__advantages-title">Персонализация стоимости</h3>
+				<p class="main__advantages-text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+			</li>
+		</ul>
+		<div class="main__info">
+			<h2 class="main__info-title">О компании</h2>
+			<p class="main__info-text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+			<p class="main__info-text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+			<a href="#" class="main__info-more">Подробнее</a>
+		</div>
+		<div class="servises">
+			<h2 class="servises__title">Service Device предлагает следующие товары и услуги</h2>
+			<ul class="servises__list">
+				<li class="servises__item servises__item--production">
+					<h3 class="servises__item-title">Производство  печатных плат </h3>
+					<a href="#" class="servises__item-link"></a>
+				</li>
+				<li class="servises__item servises__item--installation">
+					<h3 class="servises__item-title">Монтаж печатных плат</h3>
+					<a href="#" class="servises__item-link"></a>
+				</li>
+				<li class="servises__item servises__item--components">
+					<h3 class="servises__item-title">Комплектующие для светотехники</h3>
+					<a href="#" class="servises__item-link"></a>
+				</li>
+			</ul>
+		</div>
+		<div class="form">
+			<div class="form__image">
+				<img src="" alt="">
+			</div>
+			<div class="form__block">
+				<div class="form__block-text">Остались вопросы? Задайте их нам!</div>
+				<div class="form__block-label">Мы проконсультируем Вас бесплатно</div>
+				<form method="post" enctype="multipart/form-data" autocomplete="off">
+					<label>
+						<input type="text" placeholder="Имя">
+					</label>
+					<label>
+						<input type="tel" placeholder="Телефон">
+					</label>
+					<div class="form__main-text">
+						<textarea placeholder="Ваш вопрос" rows="20" cols="20"></textarea>
+					</div>
+					<button class="form__button" type="submit">Задать вопрос</button>
+					<label>
+						<input type="checkbox" checked="">
+						<span class="form__agreement">Я согласен на обработку персональных данных</span>
+					</label>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__social">
+				<img src="" alt="">
+				<ul class="footer__social-list">
+					<li class="footer__social-item footer__social-item--fb"></li>
+					<li class="footer__social-item footer__social-item--ok"></li>
+					<li class="footer__social-item footer__social-item--vk"></li>
+				</ul>
+			</div>
+			<div class="footer__sections">
+				<h3 class="footer__sections-title">Разделы сайта</h3>
+				<ul class="footer__sections-list">
+					<li class="footer__sections-item">О компании</li>
+					<li class="footer__sections-item">Продукты</li>
+					<li class="footer__sections-item">Производство печатных плат</li>
+					<li class="footer__sections-item">Монтаж печатных плат</li>
+					<li class="footer__sections-item">Комплектующие</li>
+					<li class="footer__sections-item">Доставка</li>
+					<li class="footer__sections-item">Контакты</li>
+				</ul>
+			</div>
+			<div class="footer__contacts">
+				<h3 class="footer__contacts-title">Наш офис</h3>
+				<p class="footer__contacts-address">г. Мытищи, Олимпийский проспект, д.10</p>
+				<ul class="footer__contacts-telephones">
+					<li class="footer__contacts-telephone">+7 (495) 589-40-50</li>
+					<li class="footer__contacts-telephone">+7 (925) 003-87-67</li>
+					<li class="footer__contacts-telephone">+7 (926) 926-080-79</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-rights">Все права защищены</div>
+			<div class="footer__bottom-since">1999-2018 SD Service Devices</div>
+			<a href="#" class="footer__bottom-confidential">Условия конфиденциальности</a>
+			<a href="#" class="footer__bottom-copywtite">Developed by wow studio</a>
+		</div>
+	</footer>
+
+	<div class="popup">
+		<div class="popup__back"></div>
+		<div class="popup__container">
+			<button class="popup__close"></button>
+			<div class="popup__wrapper">
+				<h2 class="popup__title">Закажите звонок</h2>
+				<p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+				<form method="post" enctype="multipart/form-data" autocomplete="off">
+					<label>
+						<input type="text" placeholder="Имя">
+					</label>
+					<label>
+						<input type="tel" placeholder="Телефон">
+					</label>
+					<div class="form__main-text">
+						<textarea placeholder="Ваш вопрос" rows="20" cols="20"></textarea>
+					</div>
+					<button class="form__button" type="submit">Отправить</button>
+					<label>
+						<input type="checkbox" checked="">
+						<span class="form__agreement">Я согласен на обработку персональных данных</span>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
