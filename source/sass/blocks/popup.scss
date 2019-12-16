@@ -1,0 +1,41 @@
+.popup__title {
+	font-family: 'RobotoCondesed', Arial, sans-serif;
+	color: #fff;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 140.62%;
+}
+
+.popup__text {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.popup input,
+.popup textarea {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.popup__button {
+	font-family: 'RobotoCondesed', Arial, sans-serif;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.popup__agreement {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+
+	opacity: 0.8;
+}

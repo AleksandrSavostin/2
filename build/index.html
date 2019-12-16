@@ -5,16 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SmartDevice</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 	<header class="header">
 		<div class="header__wrapper">
 			<div class="header__top">
 				<ul class="header__logo-wrapper">
-					<li class="header__logo header__logo--desktop"><img src="" alt=""></li>
-					<li class="header__logo header__logo--tablet"><img src="" alt=""></li>
-					<li class="header__logo header__logo--mobile"><img src="" alt=""></li>
+					<li class="header__logo header__logo--desktop">
+						<img src="img/logo-header-desktop.png" width="202" height="52" srcset="img/logo-header-desktop.png 1x, img/logo-header-desktop@2x.png 2x" alt="Логотип">
+					</li>
+					<li class="header__logo header__logo--tablet">
+						<img src="img/logo-header.png" width="202" height="52" srcset="img/logo-header.png 1x, img/logo-header2@x.png 2x" alt="Логотип">
+					</li>
+					<li class="header__logo header__logo--mobile">
+						<img src="img/logo-header-mobile.png" width="38" height="38" srcset="img/logo-header-mobile.png 1x, img/logo-header-mobile@2x.png 2x" alt="Логотип">
+					</li>
 				</ul>
 				<div class="header__contact">
 					<a href="#" class="header__contact-email">info@sd.ru</a>
@@ -27,13 +33,29 @@
 					<h1 class="header__info-title">Печатные платы</h1>
 					<p class="header__info-text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
 					<a href="#" class="header__info-consult">Получить бесплатную консультацию</a>
+					<a href="#" class="header__info-consult header__info-consult--mobile">Бесплатная консультация</a>
 					<button class="header__scroll-button">Cкролл вниз</button>
 				</div>
 				<div class="header__block-image">
 					<ul class="header__image-list">
-						<li class="header__image-item header__image-item--desktop"></li>
-						<li class="header__image-item header__image-item--tablet"></li>
-						<li class="header__image-item header__image-item--mobile"></li>
+						<li class="header__image-item header__image-item--desktop">
+							<picture>
+			                	<source type="image/webp" srcset="img/circuit-board-desktop.webp, img/circuit-board-desktop@2x.webp 2x">
+			                	<img src="img/circuit-board-desktop.png" width="705" height="515" srcset="img/circuit-board-desktop.png 1x, img/circuit-board-desktop@2x.png 2x" alt="Печатная плата">
+			              </picture>
+						</li>
+						<li class="header__image-item header__image-item--tablet">
+							<picture>
+				                <source type="image/webp" srcset="img/circuit-board-tablet.webp, img/circuit-board-tablet@2x.webp 2x">
+				                <img src="img/circuit-board-tablet.png" width="260" height="340" srcset="img/circuit-board-tablet.png 1x, img/circuit-board-tablet@2x.png 2x" alt="Печатная плата">
+				            </picture>
+						</li>
+						<li class="header__image-item header__image-item--mobile">
+							<picture>
+				                <source type="image/webp" srcset="img/circuit-board-mobile.webp, img/circuit-board-mobile@2x.webp 2x">
+				                <img src="img/circuit-board-mobile.png" width="294" height="220" srcset="img/circuit-board-mobile.png 1x, img/circuit-board-mobile@2x.png 2x" alt="Печатная плата">
+				            </picture>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -83,7 +105,7 @@
 		</div>
 		<div class="form">
 			<div class="form__image">
-				<img src="" alt="">
+				<img src="img/paper_airplane1x.png" width="511" height="288" srcset="img/paper_airplane1x.png 1x, img/paper_airplane2x.png 2x" alt="Cамолет">
 			</div>
 			<div class="form__block">
 				<div class="form__block-text">Остались вопросы? Задайте их нам!</div>
@@ -110,7 +132,7 @@
 	<footer class="footer">
 		<div class="footer__wrapper">
 			<div class="footer__social">
-				<img src="" alt="">
+				<img src="img/logo-footer.png" width="216" height="52" srcset="img/logo-footer.png 1x, img/logo-footer@2x.png 2x" alt="Логотип">
 				<ul class="footer__social-list">
 					<li class="footer__social-item footer__social-item--fb"></li>
 					<li class="footer__social-item footer__social-item--ok"></li>
@@ -161,13 +183,13 @@
 					<label>
 						<input type="tel" placeholder="Телефон">
 					</label>
-					<div class="form__main-text">
+					<div class="popup__main-text">
 						<textarea placeholder="Ваш вопрос" rows="20" cols="20"></textarea>
 					</div>
-					<button class="form__button" type="submit">Отправить</button>
+					<button class="popup__button" type="submit">Отправить</button>
 					<label>
 						<input type="checkbox" checked="">
-						<span class="form__agreement">Я согласен на обработку персональных данных</span>
+						<span class="popup__agreement">Я согласен на обработку персональных данных</span>
 					</label>
 				</form>
 			</div>

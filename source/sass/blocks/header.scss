@@ -1,0 +1,165 @@
+.header__logo--desktop {
+	display: block;
+
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
+
+	@media (max-width: $mobile-width) {
+		display: none;
+	}
+}
+
+.header__logo--tablet {
+	display: none;
+
+	@media (max-width: $tablet-width) {
+		display: block;
+	}
+
+	@media (max-width: $mobile-width) {
+		display: none;
+	}
+}
+
+.header__logo--mobile {
+	display: none;
+
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
+
+	@media (max-width: $mobile-width) {
+		display: block;
+	}
+}
+
+.header__contact-email,
+.header__contact-telephone {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+
+	@media (max-width: $mobile-width) {
+		font-size: 0;
+	}
+}
+
+.header__contact-callback {
+	font-family: 'RobotoCondesed', 'Arial', sans-serif;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.header__info-title {
+	font-family: 'RobotoCondesed', Arial, sans-serif;
+	color: #fff;
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 94px;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+
+	@media (max-width: $tablet-width) {
+		font-size: 60px;
+		line-height: 70px;
+	}
+
+	@media (max-width: $mobile-width) {
+		font-size: 40px;
+		line-height: 47px;
+	}
+}
+
+.header__info-text {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 34px;
+
+	@media (max-width: $tablet-width) {
+		font-size: 18px;
+		line-height: 156.8%;
+	}
+
+	@media (max-width: $mobile-width) {
+		font-size: 16px;
+		line-height: 156.8%;
+	}
+}
+
+.header__info-consult {
+	display: block;
+
+	font-family: 'RobotoCondesed', Arial, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+
+	@media (max-width: $mobile-width) {
+		display: none;
+	}
+}
+
+.header__info-consult--mobile {
+	display: none;
+
+	@media (max-width: $mobile-width) {
+		display: block;
+	}
+}
+
+.header__scroll-button {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+
+	@media (max-width: $mobile-width) {
+		display: none;
+	}
+}
+
+.header__image-item--desktop {
+	display: block;
+
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
+
+	@media (max-width: $mobile-width) {
+		display: none;
+	}
+}
+
+.header__image-item--tablet {
+	display: none;
+
+	@media (max-width: $tablet-width) {
+		display: block;
+	}
+
+	@media (max-width: $mobile-width) {
+		display: none;
+	}
+}
+
+.header__image-item--mobile {
+	display: none;
+
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
+
+	@media (max-width: $mobile-width) {
+		display: block;
+	}
+}

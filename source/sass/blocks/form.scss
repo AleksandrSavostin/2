@@ -1,0 +1,53 @@
+.form__image {
+	display: block;
+
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
+}
+
+.form__block-text {
+	font-family: 'RobotoCondesed', Arial, sans-serif;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 51px;
+
+	@media (max-width: $tablet-width) {
+		font-size: 32px;
+		font-weight: 140.62%;
+	}
+
+	@media (max-width: $mobile-width) {
+		font-size: 28px;
+		line-height: 140.62%;
+	}
+}
+
+.form__block-label,
+.form__block input,
+.form__block textarea {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.form__button {
+	font-family: 'RobotoCondesed', Arial, sans-serif;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.form__agreement {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+
+	opacity: 0.8;
+}
