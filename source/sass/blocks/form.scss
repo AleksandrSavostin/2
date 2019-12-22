@@ -1,12 +1,200 @@
-.form__image {
-	display: block;
+.form {
+	background-color: #00B2FF;
+}
+
+.form__wrapper {
+	position: relative;
+
+	display: flex;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (max-width: $mobile-width) {
+		max-width: none;
+		padding-left: 7px;
+		padding-right: 23px;
+	}
+}
+
+.form__block {
+	position: relative;
+
+	max-width: 570px;
+	margin-left: auto;
+	padding-top: 91px;
+	padding-bottom: 112px;
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		top: 78px;
+		right: -303px;
+
+		width: 234px;
+		height: 234px;
+
+		background-image: url("../img/polygon-form-1.png");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&::after {
+		content: "";
+
+		position: absolute;
+		top: 263px;
+		right: -461px;
+
+		width: 373px;
+		height: 373px;
+
+		background-image: url("../img/polygon-form-2.png");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	@media (max-width: $tablet-width) {
+		max-width: 600px;
+		margin-right: auto;
+		padding-top: 77px;
+		padding-bottom: 103px;
+	}
+
+	@media (max-width: $mobile-width) {
+		max-width: none;
+		min-width: 310px;
+		padding-top: 30px;
+		padding-bottom: 41px;
+	}
+}
+
+.form__wrapper::before {
+	content: "";
+
+	position: absolute;
+	top: 161px;
+	left: -24px;
+
+	width: 511px;
+	height: 288px;
+
+	background-image: url("../img/paper_airplane1x.png");
+	background-repeat: no-repeat;
 
 	@media (max-width: $tablet-width) {
 		display: none;
 	}
 }
 
+.form__wrapper::after {
+	content: "";
+
+	position: absolute;
+	top: -60px;
+	left: -199px;
+
+	width: 671px;
+	height: 641px;
+
+	background: url(../img/triangle1.png);
+	background-repeat: no-repeat;
+
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
+}
+
+.form__block-label {
+	margin-bottom: 51px;
+
+	@media (max-width: $tablet-width) {
+		margin-left: 9px;
+		margin-bottom: 54px;
+	}
+
+	@media (max-width: $mobile-width) {
+		margin-left: 0;
+		margin-bottom: 26px;
+	}
+}
+
+.form__block form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	@media (max-width: $tablet-width) {
+		padding-left: 10px;
+	}
+
+	@media (max-width: $mobile-width) {
+		display: block;
+		padding-left: 0;
+	}
+}
+
+.form__block input {
+	width: 270px;
+	height: 50px;
+	padding-left: 17px;
+
+	vertical-align: middle;
+
+	background-color: #19baff;
+	border: none;
+
+	@media (max-width: $tablet-width) {
+		width: 280px;
+		height: 52px;
+	}
+
+	@media (max-width: $mobile-width) {
+		width: 100%;
+		min-width: 290px;
+		margin-bottom: 30px;
+	}
+}
+
+.form__block textarea {
+	width: 570px;
+	height: 154px;
+	margin-top: 40px;
+	margin-bottom: 39px;
+	padding-top: 13px;
+	padding-left: 18px;
+
+	color: #fff;
+
+	background-color: #19baff;
+	border: none;
+
+	@media (max-width: $tablet-width) {
+		width: 590px;
+		height: 160px;
+		margin-bottom: 42px;
+		padding-left: 15px;
+	}
+
+	@media (max-width: $mobile-width) {
+		width: 100%;
+		min-width: 290px;
+		height: 104px;
+		margin-top: 0;
+		margin-bottom: 27px;
+	}
+}
+
+
+::placeholder {
+  color: #fff;
+}
+
 .form__block-text {
+
+	margin-bottom: 10px;
+
 	font-family: 'RobotoCondesed', Arial, sans-serif;
 	color: #fff;
 	font-size: 36px;
@@ -14,11 +202,17 @@
 	line-height: 51px;
 
 	@media (max-width: $tablet-width) {
+		margin-left: 4px;
+		margin-bottom: 13px;
+
 		font-size: 32px;
 		font-weight: 140.62%;
 	}
 
 	@media (max-width: $mobile-width) {
+		width: 100%;
+		margin-left: 0;
+
 		font-size: 28px;
 		line-height: 140.62%;
 	}
@@ -27,13 +221,22 @@
 .form__block-label,
 .form__block input,
 .form__block textarea {
+	font-family: "PTmono", "Arial", sans-serif;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 22px;
+
+	resize: none;
 }
 
 .form__button {
+	width: 270px;
+	display: inline-block;
+    padding: 14px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
 	font-family: 'RobotoCondesed', Arial, sans-serif;
 	color: #fff;
 	font-size: 14px;
@@ -41,13 +244,88 @@
 	line-height: 16px;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: transparent;
+	cursor: pointer;
+
+	@media (max-width: $tablet-width) {
+		width: 276px;
+	}
+
+	@media (max-width: $mobile-width) {
+		width: auto;
+		min-width: 290px;
+	}
+}
+
+// .form__politic {
+// 	max-width: 570px;
+// 	display: flex;
+// 	justify-content: space-between;
+// }
+
+.form__politic input {
+	display: none;
+}
+
+.form__politic {
+	width: 261px;
+	padding-top: 5px;
+	padding-left: 32px;
+
+	@media (max-width: $tablet-width) {
+		width: 272px;
+	}
+
+	@media (max-width: $mobile-width) {
+		padding-top: 27px;
+		padding-left: 35px;
+	}
 }
 
 .form__agreement {
+	position: relative;
+
 	color: #fff;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 16px;
 
 	opacity: 0.8;
+	cursor: pointer;
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		top: 2px;
+		left: -32px;
+
+		width: 14px;
+		height: 14px;
+
+		border: 1px solid #fff;
+	}
+
+	&::after {
+		content: "";
+
+		position: absolute;
+		top: 5px;
+		left: -27px;
+		
+		display: none;
+		width: 4px;
+		height: 6px;
+
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		transform: rotate(45deg);
+	}
+}
+
+.form__politic input:checked+ .form__agreement::after {
+	display: block;
 }
