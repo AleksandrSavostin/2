@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   background-color: #1b2d37;
   background-image: url("../img/desktop-header-background.png");
   background-repeat: no-repeat;
@@ -6,15 +8,50 @@
   background-size: cover;
   overflow: hidden;
 
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 119px;
+    right: 240px;
+
+    width: 1405px;
+    height: 644px;
+
+    background-image: url("../img/desktop-header-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: $tablet-width) {
+      top: 82px;
+      right: 0;
+
+      width: 770px;
+      height: 400px;
+
+      background-image: url("../img/tablet-header-bg.svg");
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 65px;
+      right: 0;
+
+      width: 321px;
+      height: 399px;
+
+      background-image: url("../img/mobile-polygon-1.svg");
+    }
+  }
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/desktop-header-background@2.png");
+    background-image: url("../img/desktop-header-background@2x.png");
   }
 
   @media (max-width: $tablet-width) {
     background-image: url("../img/tablet-header-background.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/tablet-header-background@2.png");
+      background-image: url("../img/tablet-header-background@2x.png");
     }
   }
 
@@ -22,7 +59,7 @@
     background-image: url("../img/mobile-header-background.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/mobile-header-background@2.png");
+      background-image: url("../img/mobile-header-background@2x.png");
     }
   }
 }
@@ -30,17 +67,41 @@
 .header__wrapper {
   position: relative;
 
-  max-width: 1571px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 85px;
+  padding-bottom: 127px;
+  padding-left: 101px;
+  padding-right: 87px;
+
+  background-image: url("../img/desktop-board.png");
+  background-repeat: no-repeat;
+  background-position: 99% 238px;
+
+  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/desktop-board@2x.png");
+  // }
 
   @media (max-width: $tablet-width) {
     padding-bottom: 163px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    background-image: url("../img/tablet-board.png");
+    background-position: 100% 106px;
+
+    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    //   background-image: url("../img/tablet-board@2x.png");
+    // }
   }
 
   @media (max-width: $mobile-width) {
     padding-bottom: 71px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-image: url("../img/mobile-board.png");
+    background-position: 100% 92px;
   }
 }
 
@@ -49,18 +110,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 20px;
-  padding-left: 80px;
-  padding-right: 80px;
 
   @media (max-width: $tablet-width) {
     margin-top: 7px;
-    padding-left: 18px;
-    padding-right: 8px;
   }
 
   @media (max-width: $mobile-width) {
     margin-top: 0;
-    padding-left: 10px;
   }
 }
 
@@ -70,17 +126,14 @@
   display: flex;
 
   padding-top: 153px;
-  padding-left: 80px;
 
   @media (max-width: $tablet-width) {
     padding-top: 38px;
-    padding-left: 85px;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column-reverse;
-    padding-top: 33px;
-    padding-left: 10px;
+    padding-top: 227px;
   }
 }
 
@@ -93,6 +146,7 @@
 
   @media (max-width: $mobile-width) {
     margin-top: 17px;
+    margin-left: 2px;
   }
 }
 
@@ -153,10 +207,7 @@
 
   @media (max-width: $tablet-width) {
     margin-right: 0;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-right: 5px;
+    padding-left: 23px;
   }
 }
 
@@ -196,7 +247,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-right: 7px;
+    margin-right: 11px;
   }
 
   @media (max-width: $mobile-width) {
@@ -315,9 +366,14 @@
 
   padding-top: 73px;
 
+  @media (max-width: $tablet-width) {
+    max-width: 524px;
+    padding-left: 66px;
+  }
+
   @media (max-width: $mobile-width) {
     padding: 0;
-    margin-top: -30px;
+    margin-left: 2px;
   }
 }
 

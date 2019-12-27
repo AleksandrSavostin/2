@@ -7,24 +7,30 @@
   @media (max-width: $tablet-width) {
     padding-top: 50px;
     padding-bottom: 34px;
-    padding-left: 18px;
   }
 
   @media (max-width: $mobile-width) {
     padding-bottom: 36px;
-    padding-left: 7px;
-    padding-right: 23px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 .servises__wrapper {
-  max-width: 1170px;
+  max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 48px;
+  padding-right: 30px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
   @media (max-width: $mobile-width) {
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -57,18 +63,23 @@
 
 .servises__list {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+  }
 }
 
 .servises__item {
   position: relative;
 
-  width: 370px;
-  height: 620px;
+  max-width: 370px;
+  display: flex;
+  flex-grow: 1;
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -77,8 +88,8 @@
   @media (max-width: $tablet-width) {
     width: 100%;
     min-width: 715px;
-    height: 256px;
     margin-bottom: 45px;
+    margin-right: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -104,11 +115,13 @@
   display: block;
   padding-top: 30px;
   padding-left: 45px;
-  padding-right: 160px;
+  padding-right: 10px;
+  padding-bottom: 489px;
 
   @media (max-width: $tablet-width) {
     width: 375px;
     padding-top: 20px;
+    padding-bottom: 136px;
   }
 
   @media (max-width: $mobile-width) {
@@ -118,6 +131,12 @@
     padding-top: 20px;
     padding-left: 36px;
     padding-right: 85px;
+  }
+}
+
+.servises__item:last-of-type .servises__item-rapper {
+  @media (max-width: $tablet-width) {
+    padding-bottom: 125px;
   }
 }
 
@@ -151,14 +170,14 @@
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/desktop-fabrication@2.png");
+    background-image: url("../img/desktop-fabrication@2x.png");
   }
 
   @media (max-width: $tablet-width) {
     background-image: url("../img/tablet-fabrication.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/desktop-fabrication@2.png");
+      background-image: url("../img/desktop-fabrication@2x.png");
     }
   }
 
@@ -166,7 +185,7 @@
     background-image: url("../img/mobile-fabrication.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/desktop-fabrication@2.png");
+      background-image: url("../img/desktop-fabrication@2x.png");
     }
   }
 }
@@ -177,14 +196,14 @@
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/desktop-installation@2.png");
+    background-image: url("../img/desktop-installation@2x.png");
   }
 
   @media (max-width: $tablet-width) {
     background-image: url("../img/tablet-installation.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/desktop-installation@2.png");
+      background-image: url("../img/desktop-installation@2x.png");
     }
   }
 
@@ -192,7 +211,7 @@
     background-image: url("../img/mobile-installation.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/desktop-installation@2.png");
+      background-image: url("../img/desktop-installation@2x.png");
     }
   }
 }
@@ -203,14 +222,14 @@
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/desktop-light@2.png");
+    background-image: url("../img/desktop-light@2x.png");
   }
 
   @media (max-width: $tablet-width) {
     background-image: url("../img/tablet-light.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/desktop-light@2.png");
+      background-image: url("../img/desktop-light@2x.png");
     }
   }
 
@@ -218,12 +237,14 @@
     background-image: url("../img/mobile-light.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/desktop-light@2.png");
+      background-image: url("../img/desktop-light@2x.png");
     }
   }
 }
 
 .servises__item-title {
+  max-width: 165px;
+
   font-family: "RobotoCondesed", "Arial", sans-serif;
   color: #ffffff;
   font-size: 20px;

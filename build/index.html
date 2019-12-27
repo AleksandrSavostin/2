@@ -78,15 +78,17 @@
         <div class="header__block-text">
           <h1 class="header__info-title">Печатные платы</h1>
           <p class="header__info-text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a href="#" class="header__info-consult">Получить бесплатную консультацию</a>
-          <a href="#" class="header__info-consult header__info-consult--mobile">Бесплатная консультация</a>
-          <button class="header__scroll-button">Cкролл вниз</button>
+          <a href="#form" class="header__info-consult">Получить бесплатную консультацию</a>
+          <a href="#form" class="header__info-consult header__info-consult--mobile">Бесплатная консультация</a>
+          <a href="#advantages">
+            <button class="header__scroll-button">Cкролл вниз</button>
+          </a>
         </div>
       </div>
     </div>
   </header>
   <main class="main">
-    <ul class="main__advantages-list">
+    <ul class="main__advantages-list" id="advantages">
       <li class="main__advantages-item main__advantages-item--operate">
         <svg width="45" height="40">
           <use xlink:href="#icon-watch"></use>
@@ -147,7 +149,7 @@
         </ul>
       </div>
     </div>
-    <div class="form">
+    <div class="form" id="form">
       <div class="form__wrapper">
         <div class="form__block">
           <div class="form__block-text">Остались вопросы? Задайте их нам!</div>
@@ -207,7 +209,7 @@
       <div class="footer__sections">
         <button class="footer__contacts-button" type="button"></button>
         <h3 class="footer__sections-title">Разделы сайта</h3>
-        <ul class="footer__sections-list">
+        <ul class="footer__sections-list footer__sections-list--top">
           <li class="footer__sections-item"><a href="#">О компании</a></li>
           <li class="footer__sections-item"><a href="#">Продукты</a></li>
           <li class="footer__sections-item"><a href="#">Производство печатных плат</a></li>
@@ -267,6 +269,7 @@
     </div>
   </div>
   <script src="https://unpkg.com/imask"></script>
+  <script src="js/zenscroll-min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
