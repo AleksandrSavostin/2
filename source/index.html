@@ -37,7 +37,7 @@
           <a href="#form" class="header__info-consult">Получить бесплатную консультацию</a>
           <a href="#form" class="header__info-consult header__info-consult--mobile">Бесплатная консультация</a>
           <a href="#advantages">
-            <button class="header__scroll-button">Cкролл вниз</button>
+            <button class="header__scroll-button" name="scroll">Cкролл вниз</button>
           </a>
         </div>
       </div>
@@ -111,19 +111,20 @@
           <div class="form__block-text">Остались вопросы? Задайте их нам!</div>
           <div class="form__block-label">Мы проконсультируем Вас бесплатно</div>
           <form method="post" enctype="multipart/form-data" autocomplete="off">
-            <label>
-              <input type="text" placeholder="Имя" name="name">
+            <label for="name">
+              <input type="text" placeholder="Имя" name="name" id="name">
             </label>
-            <label>
-              <input type="tel" placeholder="Телефон" name="phone">
+            <label for="hne">
+              <input type="tel" placeholder="Телефон" name="phone" id="phone">
             </label>
             <div class="form__main-text">
-              <textarea placeholder="Ваш вопрос" rows="20" cols="20" name="question"></textarea>
+              <label class="visually-hidden" for="question"></label>
+              <textarea placeholder="Ваш вопрос" rows="20" cols="20" name="question" id="question"></textarea>
             </div>
-            <button class="form__button" type="submit">Задать вопрос</button>
+            <button class="form__button" type="submit" name="question">Задать вопрос</button>
             <div class="form__politic">
-              <label>
-                <input type="checkbox" name="agreement" checked>
+              <label for="user-ask">
+                <input type="checkbox" name="agreement" id="user-ask" checked>
                 <span class="form__agreement">Я согласен на обработку персональных данных</span>
               </label>
             </div>
@@ -163,7 +164,7 @@
         </ul>
       </div>
       <div class="footer__sections">
-        <button class="footer__contacts-button" type="button"></button>
+        <button class="footer__contacts-button" type="button" name="open"></button>
         <h3 class="footer__sections-title">Разделы сайта</h3>
         <ul class="footer__sections-list footer__sections-list--top">
           <li class="footer__sections-item"><a href="#">О компании</a></li>
@@ -178,7 +179,7 @@
         </ul>
       </div>
       <div class="footer__contacts">
-        <button class="footer__contacts-button active" type="button"></button>
+        <button class="footer__contacts-button active" type="button" name="open"></button>
         <h3 class="footer__contacts-title">Наш офис</h3>
         <p class="footer__contacts-address">г. Мытищи, Олимпийский проспект, д.10</p>
         <ul class="footer__contacts-telephones">
@@ -199,24 +200,25 @@
   </footer>
   <div class="popup visually-hidden">
     <div class="popup__container">
-      <button class="popup__close" type="button"></button>
+      <button class="popup__close" type="button" name="close"></button>
       <div class="popup__wrapper">
         <h2 class="popup__title">Закажите звонок</h2>
         <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form method="post" enctype="multipart/form-data" autocomplete="off">
-          <label>
-            <input type="text" placeholder="Имя" name="name">
+          <label for="names">
+            <input type="text" placeholder="Имя" name="name" id="names">
           </label>
-          <label>
-            <input type="tel" placeholder="Телефон" name="telephone">
+          <label for="tel">
+            <input type="tel" placeholder="Телефон" name="telephone" id="tel">
           </label>
           <div class="popup__main-text">
-            <textarea placeholder="Ваш вопрос" rows="20" cols="20" name="question"></textarea>
+            <label class="visually-hidden" for="ask"></label>
+            <textarea placeholder="Ваш вопрос" rows="20" cols="20" name="question" id="ask"></textarea>
           </div>
-          <button class="popup__button" type="submit">Отправить</button>
+          <button class="popup__button" type="submit" name="send">Отправить</button>
           <div class="popup__politic">
-            <label>
-              <input type="checkbox" name="agreement" checked>
+            <label for="user-asks">
+              <input type="checkbox" name="agreement" id="user-asks" checked>
               <span class="popup__agreement">Я согласен на обработку персональных данных</span>
             </label>
           </div>
