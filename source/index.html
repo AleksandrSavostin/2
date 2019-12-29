@@ -44,36 +44,38 @@
     </div>
   </header>
   <main class="main">
-    <ul class="main__advantages-list" id="advantages">
-      <li class="main__advantages-item main__advantages-item--operate">
-        <svg width="45" height="40">
-          <use xlink:href="#icon-watch"></use>
-        </svg>
-        <h3 class="main__advantages-title">Оперативные сроки</h3>
-        <p class="main__advantages-text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-      </li>
-      <li class="main__advantages-item main__advantages-item--big">
-        <svg width="45" height="40">
-          <use xlink:href="#icon-people"></use>
-        </svg>
-        <h3 class="main__advantages-title">Крупные поставщики</h3>
-        <p class="main__advantages-text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
-      </li>
-      <li class="main__advantages-item main__advantages-item--full">
-        <svg width="45" height="40">
-          <use xlink:href="#icon-detective"></use>
-        </svg>
-        <h3 class="main__advantages-title">Полная конфиденциальность</h3>
-        <p class="main__advantages-text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
-      </li>
-      <li class="main__advantages-item main__advantages-item--person">
-        <svg width="45" height="40">
-          <use xlink:href="#icon-tag"></use>
-        </svg>
-        <h3 class="main__advantages-title">Персонализация стоимости</h3>
-        <p class="main__advantages-text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
-      </li>
-    </ul>
+    <div class="main__container">
+      <ul class="main__advantages-list" id="advantages">
+        <li class="main__advantages-item main__advantages-item--operate">
+          <svg width="45" height="40">
+            <use xlink:href="#icon-watch"></use>
+          </svg>
+          <h3 class="main__advantages-title">Оперативные сроки</h3>
+          <p class="main__advantages-text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+        </li>
+        <li class="main__advantages-item main__advantages-item--big">
+          <svg width="45" height="40">
+            <use xlink:href="#icon-people"></use>
+          </svg>
+          <h3 class="main__advantages-title">Крупные поставщики</h3>
+          <p class="main__advantages-text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+        </li>
+        <li class="main__advantages-item main__advantages-item--full">
+          <svg width="45" height="40">
+            <use xlink:href="#icon-detective"></use>
+          </svg>
+          <h3 class="main__advantages-title">Полная конфиденциальность</h3>
+          <p class="main__advantages-text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+        </li>
+        <li class="main__advantages-item main__advantages-item--person">
+          <svg width="45" height="40">
+            <use xlink:href="#icon-tag"></use>
+          </svg>
+          <h3 class="main__advantages-title">Персонализация стоимости</h3>
+          <p class="main__advantages-text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+        </li>
+      </ul>
+    </div>
     <div class="main__info">
       <h2 class="main__info-title">О компании</h2>
       <p class="main__info-text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
@@ -83,26 +85,26 @@
     <div class="servises">
       <div class="servises__wrapper">
         <h2 class="servises__title">Service Device предлагает следующие товары и услуги</h2>
-        <ul class="servises__list">
-          <li class="servises__item servises__item--production">
-            <a href="#" class="servises__item-rapper">
+        <div class="servises__list">
+          <a href="#" class="servises__item servises__item--production">
+            <div class="servises__item-rapper">
               <h3 class="servises__item-title">Производство печатных плат</h3>
               <div class="servises__item-link"></div>
-            </a>
-          </li>
-          <li class="servises__item servises__item--installation">
-            <a href="#" class="servises__item-rapper">
+            </div>
+          </a>
+          <a href="#" class="servises__item servises__item--installation">
+            <div class="servises__item-rapper">
               <h3 class="servises__item-title">Монтаж печатных плат</h3>
               <div class="servises__item-link"></div>
-            </a>
-          </li>
-          <li class="servises__item servises__item--components">
-            <a href="#" class="servises__item-rapper">
+            </div>
+          </a>
+          <a href="#" class="servises__item servises__item--components">
+            <div class="servises__item-rapper">
               <h3 class="servises__item-title">Комплектующие для светотехники</h3>
               <div class="servises__item-link"></div>
-            </a>
-          </li>
-        </ul>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
     <div class="form" id="form">
@@ -112,19 +114,19 @@
           <div class="form__block-label">Мы проконсультируем Вас бесплатно</div>
           <form method="post" enctype="multipart/form-data" autocomplete="off">
             <label for="user-name">
-              <input type="text" placeholder="Имя" name="name-user" id="user-name">
+              <input type="text" placeholder="Имя" name="name-user" id="user-name" required>
             </label>
             <label for="user-phone">
-              <input type="tel" placeholder="Телефон" name="phone" id="user-phone">
+              <input type="tel" placeholder="Телефон" name="phone" id="user-phone" required>
             </label>
             <div class="form__main-text">
               <label class="visually-hidden" for="question"></label>
-              <textarea placeholder="Ваш вопрос" rows="20" cols="20" name="question" id="question"></textarea>
+              <textarea placeholder="Ваш вопрос" rows="20" cols="20" name="question" id="question" required></textarea>
             </div>
             <button class="form__button" type="submit" name="question">Задать вопрос</button>
             <div class="form__politic">
-              <label for="user-ask">
-                <input type="checkbox" name="agreement" id="user-ask" checked>
+              <label for="user-ask" tabindex="0">
+                <input type="checkbox" name="agreement" id="user-ask" checked required>
                 <span class="form__agreement">Я согласен на обработку персональных данных</span>
               </label>
             </div>
@@ -178,7 +180,7 @@
           <li class="footer__sections-item"><a href="#">Контакты</a></li>
         </ul>
       </div>
-      <div class="footer__contacts">
+      <div class="footer__contacts active">
         <button class="footer__contacts-button active" type="button" name="open-contacts"></button>
         <h3 class="footer__contacts-title">Наш офис</h3>
         <p class="footer__contacts-address">г. Мытищи, Олимпийский проспект, д.10</p>
@@ -206,19 +208,19 @@
         <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form method="post" enctype="multipart/form-data" autocomplete="off">
           <label for="names">
-            <input type="text" placeholder="Имя" name="name" id="names">
+            <input type="text" placeholder="Имя" name="name" id="names" required>
           </label>
           <label for="tel">
-            <input type="tel" placeholder="Телефон" name="telephone" id="tel">
+            <input type="tel" placeholder="Телефон" name="telephone" id="tel" required>
           </label>
           <div class="popup__main-text">
             <label class="visually-hidden" for="ask"></label>
-            <textarea placeholder="Ваш вопрос" rows="20" cols="20" name="question" id="ask"></textarea>
+            <textarea placeholder="Ваш вопрос" rows="20" cols="20" name="question" id="ask" required></textarea>
           </div>
           <button class="popup__button" type="submit" name="send">Отправить</button>
           <div class="popup__politic">
-            <label for="user-asks">
-              <input type="checkbox" name="agreement" id="user-asks" checked>
+            <label for="user-asks" tabindex="0">
+              <input type="checkbox" name="agreement" id="user-asks" checked required>
               <span class="popup__agreement">Я согласен на обработку персональных данных</span>
             </label>
           </div>

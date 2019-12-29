@@ -63,7 +63,7 @@
   }
 }
 
-.main__advantages-list::before {
+.main__container::before {
   content: "";
 
   position: absolute;
@@ -153,7 +153,6 @@
 .main__advantages-item {
   position: relative;
 
-  max-width: 570px;
   max-width: 48.7%;
   padding-top: 95px;
   padding-bottom: 49px;
@@ -172,7 +171,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    max-width: 345px;
     max-width: 48%;
     padding-top: 66px;
     padding-bottom: 3px;
@@ -181,7 +179,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    min-width: 290px;
+    max-width: 100%;
+    width: 100%;
     margin-bottom: 20px;
     padding: 71px 18px 8px 24px;
   }
