@@ -669,7 +669,9 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
-  border-left: 2px solid #00b2ff; }
+  border-left: 2px solid #00b2ff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
   .main__advantages-item:hover {
     background-color: #00b2ff;
     border-color: transparent; }
@@ -695,7 +697,9 @@ input[type="radio"].visually-hidden {
   width: 33px;
   height: 35px;
   fill: #00b2ff;
-  color: #00b2ff; }
+  color: #00b2ff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
   @media (max-width: 1023px) {
     .main__advantages-item svg {
       top: 24px;
@@ -808,7 +812,9 @@ input[type="radio"].visually-hidden {
   color: #00b2ff;
   font-size: 24px;
   font-weight: 400;
-  line-height: 34px; }
+  line-height: 34px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
   @media (max-width: 767px) {
     .main__advantages-title {
       font-size: 20px;
@@ -818,7 +824,9 @@ input[type="radio"].visually-hidden {
   color: #666666;
   font-size: 16px;
   font-weight: 400;
-  line-height: 22px; }
+  line-height: 22px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
   @media (max-width: 1023px) {
     .main__advantages-text {
       margin-top: 9px; } }
@@ -1026,7 +1034,9 @@ input[type="radio"].visually-hidden {
   background-color: #00b2ff;
   background-image: url("../img/vector.png");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
   .servises__item-link:hover {
     opacity: 0.7; }
   .servises__item-link:active, .servises__item-linkfocus {
@@ -1225,7 +1235,10 @@ input[type="radio"].visually-hidden {
   padding-left: 17px;
   vertical-align: middle;
   background-color: #19baff;
-  border: none; }
+  border: none;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
   .form__block input:hover {
     opacity: 0.7; }
   @media (max-width: 1023px) {
@@ -1247,7 +1260,10 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #19baff;
   border: none;
-  overflow: auto; }
+  overflow: auto;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
   .form__block textarea:hover {
     opacity: 0.7; }
   @media (max-width: 1023px) {
@@ -1408,6 +1424,8 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   line-height: 25px;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   opacity: 0.5; }
 
 .footer__bottom-rights,
@@ -1720,7 +1738,8 @@ input[type="radio"].visually-hidden {
     margin-left: 0; } }
 
 .footer__contacts-button {
-  display: none; }
+  display: none;
+  outline: none; }
   @media (max-width: 767px) {
     .footer__contacts-button {
       position: absolute;

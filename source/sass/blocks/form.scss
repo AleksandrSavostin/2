@@ -147,6 +147,8 @@
 
   background-color: #19baff;
   border: none;
+  outline: none;
+  transition: 0.5s;
 
   &:hover {
     opacity: 0.7;
@@ -167,7 +169,6 @@
 .form__block textarea {
   width: 570px;
   height: 154px;
-  // margin-top: 40px;
   margin-bottom: 39px;
   padding-top: 13px;
   padding-left: 18px;
@@ -177,6 +178,9 @@
   background-color: #19baff;
   border: none;
   overflow: auto;
+
+  outline: none;
+  transition: 0.5s;
 
   &:hover {
     opacity: 0.7;

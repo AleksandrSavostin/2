@@ -19,6 +19,7 @@
   font-weight: 400;
   line-height: 25px;
   text-decoration: none;
+  transition: 0.5s;
 
   opacity: 0.5;
 }
@@ -379,6 +380,7 @@
 
 .footer__contacts-button {
   display: none;
+  outline: none;
 
   @media (max-width: $mobile-width) {
     position: absolute;
